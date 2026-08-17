@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body{
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: rgb(254, 255, 255);
+}
+
+/*Home Page*/
+
+.home-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nav-bar{
+height: 60px;
+  display: flex;
+  padding: 20px;
+  background-color: rgb(3, 112, 36); 
+  align-items: center; 
+  width: 100%; 
+  gap: 350px;
+  position:fixed;
+}
+.nav-bar .logo{
+    font-family: "Changa One", sans-serif;
+    font-size: 60px;
+}
+.logo:hover{
+    cursor: default;
+}
+.nav-link ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap:60px;
+}
+.nav-link a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+a:hover{
+    color: rgb(140, 176, 194);
+    transition: 0.3s ease-in-out;
+}
+.cta-section{
+    font-size: 10px;
+}
+
+
+.hero-section{
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: 50px;
+}
+.data-section{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 60px;
+}
+.data-section h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+.data-section p{
+    margin-bottom: 30px;
+}
+.data-section button{
+  background-color: rgb(9, 87, 28);
+  color: aliceblue;
+  border: none;
+  margin-left: 25%;
+  padding: 10px 90px;
+  font-weight:bold;
+  border-radius: 25px;
+  font-size: larger;
+  cursor: pointer;
+}
+.img-section{
+    display: flex;
+    flex: 1;
+    padding: 50px;
+}
+.img-section img{
+    width: 100%;
+    height:100%;
+    border-radius: 30px;
+    
+}
+
+/*About Page*/
+
+
+.about-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 60px 20px 0px 30px;
+}
+.info{
+    display: flex;
+    flex: 1;
+    padding: 15px 15px 20px 10px;
+    background-color:rgb(145, 205, 208);
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.info p{
+        font-size: 15px;
+    margin-top: 5px;
+}
+.region1{
+    padding: 10px;
+}
+.region2{
+    padding: 10px;
+}
+.region3{
+    padding: 10px;
+}
+
+.review-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: rgb(1, 139, 38);
+    border-radius: 25px;
+    margin: 20px 40px;
+}
+.review-section .img {
+    flex: 0 0 25%; 
+    max-width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-section .img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.review-section .content {
+    flex: 0 0 75%;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px;
+}
+.review-section .content h2 {
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.review-section .content p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #0c0202;
+}
+.review-section .content h4 {
+    font-size: 16px;
+    color: #000000;
+}
+
+/*Store Page*/
+
+.store-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.chairs-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.chairs-section h3{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.chairs-section button{
+    background-color: rgb(2, 96, 22);
+    color: aliceblue;
+    border: none;
+    position: relative;         
+    left: 120px;            
+    margin: 0 auto;     
+    padding: 6px 12px;  
+    border-radius: 15px;
+    font-size: 14px;    
+    cursor: pointer;
+}
+.chairs-section button:hover{
+    background-color: rgb(2, 96, 22);
+    transition: 0.3s ease-in-out;
+
+}
+.chairs-section li{
+    list-style: none;
+    font-size: 15px;
+}
+.chairs-section h4{
+    position: relative;
+    top: 20px;         
+    right: 165px;            
+    margin: 0 auto;  
+}
+.chairs-section .first{
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+}
+.first img{
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.chairs-section .second{
+    display: flex;
+    flex:0 0 25%;
+    flex-direction: column;
+}
+.second img{
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+.chairs-section .third{
+    display: flex;
+    flex: 0 0 25%;
+    flex-direction: column;
+}
+.third img{
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*Footer*/
+
+.footer-line{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(7, 125, 58);
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
